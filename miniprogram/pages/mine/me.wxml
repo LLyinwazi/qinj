@@ -1,2 +1,5 @@
-<!--pages/mine/me.wxml-->
-<text>pages/mine/me.wxml</text>
+<view>
+    <van-tag type="primary">{{name}}</van-tag>
+    <image src='cloud://wiwi-no-1-0105d5.7769-wiwi-no-1-0105d5/Tulips.jpg' 
+          style='width: 30px; height: 80px; background-color: #eeeeee;' mode='aspectFit'></image>
+</view>

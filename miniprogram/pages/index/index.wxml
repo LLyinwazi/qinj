@@ -1,3 +1,26 @@
 <view>
-  <button bindtap='bindtest'>test</button>
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})">
+    </button>
+    <view>
+      <button class="userinfo-nickname" bindtap="getUserInfo">微信授权登陆</button>
+    </view>
+      </view>
+  <view>
+    <image src='cloud://wiwi-no-1-0105d5.7769-wiwi-no-1-0105d5/Tulips.jpg' style='width: 120px; height: 80px; background-color: #eeeeee;'></image>
+  </view>
+  <view class='discount_font'>
+    <vant>点击领取</vant>
+  </view>
+  <text>\r\n</text>
+<view>
+   <image src='cloud://wiwi-no-1-0105d5.7769-wiwi-no-1-0105d5/Tulips.jpg' style='width: 120px; height: 80px; background-color: #eeeeee;'></image>
+  </view>
+  <view class='discount_font'>
+    <vant>点击领取</vant>
+  </view>
 </view>
