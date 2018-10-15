@@ -9,6 +9,13 @@
     <view>
       <button class="userinfo-nickname" bindtap="getUserInfo">微信授权登陆</button>
     </view>
+     <view>
+      <button class="userinfo-nickname" bindtap="bindGetUser">获取用户信息</button>
+    </view>
+    
+    <view>
+      <text>{{user.memberName}}</text>
+    </view>
       </view>
   <view>
     <image src='cloud://wiwi-no-1-0105d5.7769-wiwi-no-1-0105d5/Tulips.jpg' style='width: 120px; height: 80px; background-color: #eeeeee;'></image>
