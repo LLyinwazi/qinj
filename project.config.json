@@ -11,6 +11,7 @@
 	"appid": "wx6837f93efb27bf4b",
 	"projectname": "qinjiang",
 	"libVersion": "2.2.5",
+	"compileType": "miniprogram",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -32,8 +33,9 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
 				}
 			]
 		}
