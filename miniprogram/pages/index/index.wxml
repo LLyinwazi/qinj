@@ -24,10 +24,27 @@
     <vant>点击领取</vant>
   </view>
   <text>\r\n</text>
-<view>
-   <image src='cloud://wiwi-no-1-0105d5.7769-wiwi-no-1-0105d5/Tulips.jpg' style='width: 120px; height: 80px; background-color: #eeeeee;'></image>
+  <!-- 获取优惠券 -->
   </view>
-  <view class='discount_font'>
-    <vant>点击领取</vant>
-  </view>
+    <van-button bind:click="getAllCoupon">查看优惠券</van-button>
+     <text>\r\n</text>
+    <van-button bind:click="checkCoupons">查看优惠券2</van-button>
+<view wx:for="{{all_coupon_list}}">
+    <view title="{{item.couponName}}"></view>
+     <view title="{{item.coupon_name}}"></view>
+   
+<!-- 遍历 -->
+<!-- <van-card title="{{item.title}}" desc="{{item.author[0]}}" price="{{item.price}}" thumb="{{item.image}}" bind:click="viewItem">
+    <view slot="tags">
+      <view wx:for="{{item.tags}}" wx:for-index="idx" wx:for-item="tag">
+        <view wx:if="{{idx < 2}}">
+          <van-tag type="primary">{{tag.name}}</van-tag>
+        </view>
+      </view>
+
+    </view>
+    <view slot="footer">
+      <van-button data-id="{{item._id}}" size="small" type="primary" plain bind:click="viewItem">查看详情</van-button>
+    </view>
+  </van-card> -->
 </view>

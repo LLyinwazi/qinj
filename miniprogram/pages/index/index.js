@@ -13,18 +13,28 @@ Page({
             memberName: '',
             phone: ''
         },
-        all_coupon_list: [],
+       // all_coupon_list: [],
         my_coupon_list: []
     },
 
     //展示所有优惠券列表
     getAllCoupon: function () {
+      var _this = this;
         wx.request({
-            url: 'https://139.199.154.55/getAllCoupon',
+            url: 'https://139.199.154.55/coupon/getAllCoupon',
+            method: 'POST',
             success: res => {
-                this.setData({all_coupon_list: res.data})
+              console.log("--------success all_coupon_list----" + res.data[0].couponName),
+                this.setData({
+                     all_coupon_list:res.data
+                  })
             }
-        })
+        }),
+          console.log("-------- all_coupon_list----" + this.all_coupon_list)          
+    },
+
+    checkCoupons:function() {
+      console.log("-------- all_coupon_list----" + this.all_coupon_list)    
     },
 
     bindAddCoupon: function () {
@@ -77,7 +87,6 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function () {
-
         // 获取用户信息
         wx.getSetting({
             success: res => {
@@ -94,7 +103,7 @@ Page({
                 }
             }
         }),
-            getAllCoupon()
+          this.getAllCoupon;
     },
 
     onGetOpenid: function () {
